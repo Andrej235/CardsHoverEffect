@@ -1,0 +1,77 @@
+body {
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    place-items: center;
+}
+
+.cards-wrapper {
+    width: 25vw;
+    height: 25vw;
+    display: grid;
+    place-items: center;
+
+    /* border: 3px solid red; */
+}
+
+.big-card {
+    width: 15vw;
+    height: 50vh;
+    /* opacity: 0.5; */
+    /* background-color: #616161; */
+    background-size: 15vw 50vh;
+
+    position: absolute;
+    transition: 500ms;
+}
+
+.cards-wrapper .big-card:nth-child(1)
+{
+    background-image: url("https://images.unsplash.com/photo-1661782790902-354797450650?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80");
+    transform: rotate(5deg);
+}
+.cards-wrapper .big-card:nth-child(2)
+{
+    background-image: url("https://images.unsplash.com/photo-1547241850-eb8a8754f95c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80");
+    transform: rotate(3deg);
+}
+.cards-wrapper .big-card:nth-child(3)
+{
+    background-image: url("https://images.unsplash.com/photo-1587971818791-fae2d8894a46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80");
+    transform: rotate(0deg);
+}
+.cards-wrapper .big-card:nth-child(4)
+{
+    background-image: url("https://images.unsplash.com/photo-1504253492562-cbc4dc540fcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    transform: rotate(-3deg);
+}
+.cards-wrapper .big-card:nth-child(5)
+{
+    background-image: url("https://images.unsplash.com/photo-1610654398443-b60fb7afe166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80");
+    transform: rotate(-5deg);
+}
+
+.cards-wrapper .big-card.hovered:nth-child(1)
+{
+    transform: rotate(25deg) translate(75%, -17%);
+}
+.cards-wrapper .big-card.hovered:nth-child(2)
+{
+    transform: rotate(15deg) translate(45%, -12%);
+}
+.cards-wrapper .big-card.hovered:nth-child(3)
+{
+    transform: rotate(0deg) translate(0%, -10%);
+}
+.cards-wrapper .big-card.hovered:nth-child(4)
+{
+    transform: rotate(-15deg) translate(-45%, -12%);
+}
+.cards-wrapper .big-card.hovered:nth-child(5)
+{
+    transform: rotate(-25deg) translate(-75%, -17%);
+}
